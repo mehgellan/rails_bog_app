@@ -2,4 +2,5 @@
 <% @creatures.each do |f| %>
   <p><strong>Creature name: </strong><%= f.name %></p>
   <p><strong>Creature description: </strong><%= f.description %></p>
+  <%= link_to "Show page", creature_path(f)  %>
 <% end %>
